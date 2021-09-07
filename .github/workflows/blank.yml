@@ -1,0 +1,22 @@
+(1)
+// function solve(arr) {
+//     return arr.reduce((a, x) => Math.max(...x) > a ? Math.max(...x) : a, -Infinity)
+//   }
+//   console.log(solve([[20, 50, 10], [8, 33, 145]]))
+(2)
+function solve(matrix){ 
+    let max = Math.max(...[].concat(...matrix)); 
+    return max;
+    }
+// console.log(solve([[20, 50, 10], [8, 33, 145]]));
+(3)
+
+const arr = [[12,45,75], [54,45,2],[23,54,75,2]];
+
+const max = Math.max(...[].concat(...arr));
+
+const min = Math.min(...[].concat(...arr));
+
+console.log(max);
+
+console.log(min)
